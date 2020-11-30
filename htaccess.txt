@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^(.*)\.[\d]{10}\.(css|js)$ $1.$2 [L]
+RewriteCond $1 !^(index\.php|assets)
+RewriteRule ^(.*)$ /index.php/$1 [L]
